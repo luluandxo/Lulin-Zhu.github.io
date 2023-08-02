@@ -7,16 +7,15 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0 auto;
-            max-width: 600px;
+            max-width: 800px;
             padding: 20px;
+        }
+        header {
+            text-align: center;
         }
         h1 {
             color: #007BFF;
             margin-bottom: 10px;
-        }
-        h2 {
-            color: #555;
-            margin-bottom: 5px;
         }
         p {
             margin: 5px 0;
@@ -28,15 +27,62 @@
             font-weight: bold;
         }
         .education, .work-experience {
-            border-left: 2px solid #007BFF;
-            padding-left: 10px;
-            margin-bottom: 20px;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+        .education h3, .work-experience h3 {
+            color: #007BFF;
+            margin-bottom: 5px;
+        }
+        .education ul, .work-experience ul {
+            list-style-type: square;
+        }
+        .skills {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+        .skills h3 {
+            color: #007BFF;
+            margin-bottom: 5px;
+        }
+        .activities {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+        .activities h3 {
+            color: #007BFF;
+            margin-bottom: 5px;
+        }
+        .hobbies {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+        .hobbies h3 {
+            color: #007BFF;
+            margin-bottom: 5px;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Your Name</h1>
-    <p class="contact">Email: your.email@example.com | Phone: (+44) 1234567890 | GitHub: github.com/yourusername</p>
+    <header>
+        <h1>Your Name</h1>
+        <img class="profile-picture" src="https://github.com/luluandxo/Lulin-Zhu.github.io/blob/main/mmexport1628041603628.jpg" alt="Your Profile Picture">
+        <p class="contact">Email: your.email@example.com | Phone: (+44) 1234567890 | GitHub: github.com/yourusername</p>
+    </header>
 
     <div class="section">
         <h2>Summary</h2>
@@ -45,31 +91,34 @@
 
     <div class="section education">
         <h2>Education</h2>
-        <h3>University of Sheffield (Studying)</h3>
-        <p>Master's Degree, Data Communication | Sept. 2022 - Sept. 2023</p>
-        <ul>
-            <li>Main Courses:</li>
-            <li>Network and Internetwork Architectures</li>
-            <li>Foundations of Object-Oriented Programming</li>
-            <!-- Add more courses here -->
-        </ul>
-        <p>GPA: semester1: 71/100 (Expected to graduate with a DISTINCTION degree)</p>
-        <p>Graduation Thesis Direction: 3D Human Pose Estimation (Remarks: In progress)</p>
+        <div class="education">
+            <h3>University of Sheffield (Studying)</h3>
+            <p>Master's Degree, Data Communication | Sept. 2022 - Sept. 2023</p>
+            <ul>
+                <li>Main Courses:</li>
+                <li>Network and Internetwork Architectures</li>
+                <li>Foundations of Object-Oriented Programming</li>
+                <!-- Add more courses here -->
+            </ul>
+            <p>GPA: semester1: 71/100 (Expected to graduate with a DISTINCTION degree)</p>
+            <p>Graduation Thesis Direction: 3D Human Pose Estimation (Remarks: In progress)</p>
+        </div>
     </div>
 
     <div class="section work-experience">
         <h2>Work Experience</h2>
-        <h3>ChangLongXin Technology Co., Ltd (China)</h3>
-        <p>Software Engineer | August 2019 - August 2021</p>
-        <ul>
-            <li>The development of two-dimensional code-scanning boxes</li>
-            <li>Participate in the construction of two-dimensional code scanning program framework</li>
-            <!-- Add more work experiences here -->
-        </ul>
-        <!-- Add more work experiences here -->
+        <div class="work-experience">
+            <h3>ChangLongXin Technology Co., Ltd (China)</h3>
+            <p>Software Engineer | August 2019 - August 2021</p>
+            <ul>
+                <li>The development of two-dimensional code-scanning boxes</li>
+                <li>Participate in the construction of two-dimensional code scanning program framework</li>
+                <!-- Add more work experiences here -->
+            </ul>
+        </div>
     </div>
 
-    <div class="section">
+    <div class="section skills">
         <h2>Skills</h2>
         <h3>IT Skills:</h3>
         <ul>
@@ -81,13 +130,17 @@
         <p>TOEFL: 103</p>
     </div>
 
-    <div class="section">
-        <h2>Activities & Hobbies</h2>
+    <div class="section activities">
+        <h2>Activities & Positions of Responsibility</h2>
         <ul>
             <li>Head of Activities Department, North China Electric Power University Reader Association | May 2015 - May 2016</li>
             <li>Participate in the 19th MOFANG Shenzhen 100km Hike | May 2019</li>
-            <!-- Add more activities and hobbies here -->
+            <!-- Add more activities and positions of responsibility here -->
         </ul>
+    </div>
+
+    <div class="section hobbies">
+        <h2>Hobbies</h2>
         <p>Hobbies: Running (2019 Baoan Marathon), Painting, Hiking (the 19th MOFANG Shenzhen 100km Hike)</p>
     </div>
 </body>
